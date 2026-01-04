@@ -1,11 +1,9 @@
 {
 	"required": true,
-	"package": "com.example.stackable.mixin",
+	"package": "com.example.spawnall.mixin",
 	"compatibilityLevel": "JAVA_21",
 	"mixins": [
-		"TotemItemMixin",
-		"ItemStackMixin",
-		"PowderSnowBucketMixin"
+		"SpawnEggItemMixin"
 	],
 	"injectors": {
 		"defaultRequire": 1

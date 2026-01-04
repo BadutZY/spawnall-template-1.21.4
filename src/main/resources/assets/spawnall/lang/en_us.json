@@ -1,0 +1,5 @@
+{
+  "category.spawn-all": "Spawn All Mod",
+  "key.spawn-all.toggle": "Toggle Vanilla/Spawn All Mode",
+  "key.spawn-all.rescan": "Rescan World for Spawners"
+}

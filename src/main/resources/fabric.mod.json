@@ -1,9 +1,9 @@
 {
 	"schemaVersion": 1,
-	"id": "stackable-items",
+	"id": "spawn-all",
 	"version": "1.0.0",
-	"name": "Stackable Items",
-	"description": "Make items stackable up to 64",
+	"name": "Spawn All",
+	"description": "all spawn eggs can be spawn in the spawner.",
 	"authors": [
 		"BadutZY"
 	],
@@ -11,24 +11,29 @@
 		"homepage": "https://modrinth.com/user/BadutZY"
 	},
 	"license": "MIT",
-	"icon": "assets/stackablelitems/icon.png",
+	"icon": "assets/spawnall/icon.png",
 	"environment": "*",
 	"entrypoints": {
 		"main": [
-			"com.example.stackable.StackableTotem"
+			"com.example.spawnall.UniversalSpawnerMod"
 		],
-		"fabric-datagen": [
-			"com.example.stackable.StackablelItemsDataGenerator"
+		"client": [
+			"com.example.spawnall.SpawnerClient"
+		],
+		"modmenu": [
+			"com.example.spawnall.SpawnerClient"
 		]
 	},
 	"mixins": [
-		"stackablelitems.mixins.json"
+		"spawnall.mixins.json"
 	],
 	"depends": {
 		"fabricloader": ">=0.16.10",
 		"minecraft": "~1.21.4",
 		"java": ">=21",
-		"fabric-api": "0.119.3"
+		"fabric-api": "*",
+		"modmenu": ">=13.0.3",
+		"cloth-config": ">=17.0.144+fabric"
 	},
 	"suggests": {
 		"another-mod": "*"
